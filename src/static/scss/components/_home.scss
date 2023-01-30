@@ -1,5 +1,7 @@
 .quiz{
   &-wrapper{
+    max-width: 1920px;
+    margin: 0 auto;
     width: 100%;
     height: 100%;
     padding: 0;
@@ -42,7 +44,7 @@
   }
   &-item{
     opacity: 0;
-    transition: opacity ease 300ms;
+    transition: all ease 300ms;
     position: absolute;
     visibility: hidden;
     z-index: -1;
@@ -86,6 +88,15 @@
       line-height: 37px;
       color: rgba(28, 28, 28, 0.7);
       margin-bottom: 60px;
+    }
+    &__link{
+      display: flex;
+      .checkbox-item{
+        margin-right: 30px;
+        &:last-of-type{
+          margin-right: 0;
+        }
+      }
     }
   }
 }
@@ -155,13 +166,25 @@
 .reviews-item{
   background: rgba(237, 241, 246, .7);
   border-radius: 26px;
+  height: 206px;
   padding: 18px 25px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  position: absolute;
+  top: 10px;
+  &.active{
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+    position: relative;
+    top: 0;
+  }
   &__media{
     grid-area: 1 / 1 / 4 / 2;
     border-radius: 20px;

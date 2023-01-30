@@ -3,6 +3,7 @@ if($('.quiz-inner .quiz-item:last-of-type').hasClass('active')){
 }else{
     $('.quiz-item .quiz-item__link').on('click', function (e) {
         $('.quiz-item.active').removeClass('active').next().addClass('active');
+        $('.reviews-item.active').removeClass('active').next().addClass('active');
         $('.quiz-media__item.active').removeClass('active').next().addClass('active');
     });
 }
