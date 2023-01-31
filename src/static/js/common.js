@@ -1,12 +1,18 @@
-if($('.quiz-inner .quiz-item:last-of-type').hasClass('active')){
-
-}else{
-    $('.quiz-item .quiz-item__link').on('click', function (e) {
+$('.quiz-item .quiz-item__link button, .quiz-item .quiz-item__link input').on('click', function (e) {
+    if($('.quiz-inner .quiz-item:last-of-type').hasClass('active')){}else{
+        $('.quiz-step').slideDown();
+        $('.quiz-step__title .total').html($('.quiz-inner .quiz-item').length - 2);
+        var myStr = $('.quiz-inner .quiz-item.active').data('quiz').replace(/\D/g,'');
+        $('.quiz-step__title .current').html(myStr);
         $('.quiz-item.active').removeClass('active').next().addClass('active');
         $('.reviews-item.active').removeClass('active').next().addClass('active');
         $('.quiz-media__item.active').removeClass('active').next().addClass('active');
-    });
-}
+    }
+    if($('.quiz-inner .quiz-item:nth-last-of-type(1)').hasClass('active')){
+        $('.quiz-step').slideUp().addClass('hidden');
+    }
+});
+
 
 // AOS.init({disable: 'mobile'});
 // $('.header-btn').on('click', function (e) {

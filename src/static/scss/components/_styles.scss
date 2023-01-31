@@ -81,8 +81,7 @@ button{
     background-repeat: no-repeat;
   }
 }
-.btn-primary{
-  background: #3E8945;
+.btn-primary, .btn-secondary{
   border-radius: 15px;
   width: 100%;
   padding: 30px;
@@ -94,9 +93,17 @@ button{
   color: #FFFFFF;
   &:hover{
     background: #CB2B43;
+    color: #FFFFFF;
   }
 }
-.checkbox-item{
+.btn-primary{
+  background: #3E8945;
+}
+.btn-secondary{
+  background: #E6E9ED;
+  color: #1C1C1C;
+}
+.radio-item{
   label{
     padding: 14px;
     width: 200px;
