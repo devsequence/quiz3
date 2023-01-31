@@ -251,6 +251,50 @@ button {
   position: absolute;
   z-index: -1; }
 
+.checkbox-item {
+  margin-bottom: 20px; }
+  .checkbox-item label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 37px;
+    cursor: pointer;
+    display: flex;
+    padding-left: 50px;
+    position: relative;
+    align-items: center;
+    color: rgba(28, 28, 28, 0.7);
+    transition: all ease 300ms; }
+    .checkbox-item label:before, .checkbox-item label:after {
+      position: absolute;
+      transition: all ease 300ms;
+      content: '';
+      width: 30px;
+      height: 30px;
+      left: 0;
+      top: 0; }
+    .checkbox-item label:before {
+      background: #E6E9ED;
+      border: 1px solid rgba(160, 166, 175, 0.5);
+      border-radius: 5px; }
+    .checkbox-item label:after {
+      background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.80494 14.9458L7.87565 15.0165L7.94636 14.9458L16.8422 6.04992L16.9129 5.97921L16.8422 5.9085L15.9464 5.01266L15.8757 4.94195L15.8049 5.01266L7.87565 12.942L4.17553 9.24183L4.10482 9.17112L4.03411 9.24183L3.13827 10.1377L3.06756 10.2084L3.13827 10.2791L7.80494 14.9458Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0; }
+  .checkbox-item input {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: -1; }
+    .checkbox-item input:checked + label {
+      color: #1C1C1C; }
+      .checkbox-item input:checked + label:before {
+        background: #3E8945; }
+      .checkbox-item input:checked + label:after {
+        opacity: 1; }
+
 .tab-item {
   visibility: hidden;
   position: absolute;
@@ -325,6 +369,13 @@ button {
     line-height: 70px;
     color: #1C1C1C;
     margin-bottom: 39px; }
+    .quiz-item__title span {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 37px;
+      color: rgba(28, 28, 28, 0.7);
+      display: block;
+      margin-top: 25px; }
   .quiz-item__info {
     font-weight: 500;
     font-size: 18px;
@@ -350,6 +401,16 @@ button {
     line-height: 37px;
     color: rgba(28, 28, 28, 0.7);
     margin-bottom: 60px; }
+    .quiz-item__text p {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 37px;
+      margin-bottom: 40px; }
+    .quiz-item__text blockquote {
+      padding: 35px;
+      background: rgba(225, 255, 237, 0.25);
+      border: 1px solid #8BD191;
+      border-radius: 15px; }
   .quiz-item__link {
     display: flex; }
     .quiz-item__link .radio-item {
@@ -358,6 +419,8 @@ button {
         margin-right: 0; }
     .quiz-item__link .btn-primary {
       margin-right: 30px; }
+  .quiz-item:last-of-type .btn-primary {
+    max-width: 350px; }
 
 .quiz-wrap {
   display: grid;

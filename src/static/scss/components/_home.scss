@@ -60,6 +60,14 @@
       line-height: 70px;
       color: #1C1C1C;
       margin-bottom: 39px;
+      span{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 37px;
+        color: rgba(28, 28, 28, 0.7);
+        display: block;
+        margin-top: 25px;
+      }
     }
     &__info{
       font-weight: 500;
@@ -88,6 +96,18 @@
       line-height: 37px;
       color: rgba(28, 28, 28, 0.7);
       margin-bottom: 60px;
+      p{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 37px;
+        margin-bottom: 40px;
+      }
+      blockquote{
+        padding: 35px;
+        background: rgba(225, 255, 237, 0.25);
+        border: 1px solid #8BD191;
+        border-radius: 15px;
+      }
     }
     &__link{
       display: flex;
@@ -99,6 +119,11 @@
       }
       .btn-primary{
         margin-right: 30px;
+      }
+    }
+    &:last-of-type{
+      .btn-primary{
+        max-width: 350px;
       }
     }
   }
