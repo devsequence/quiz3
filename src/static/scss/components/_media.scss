@@ -11,6 +11,7 @@
     }
     .quiz-reviews{
       padding: 0 50px;
+      top: 580px;
     }
   }
   .quiz-media__item{
@@ -120,6 +121,9 @@
     .quiz-media__item{
       height: 410px;
     }
+    .quiz-reviews{
+      top: 480px;
+    }
   }
   .reviews-item{
     &__title {
@@ -177,6 +181,7 @@
     .quiz-reviews{
       position: relative;
       bottom: auto;
+      top: auto;
       left: auto;
       width: 100%;
     }
@@ -323,9 +328,6 @@
     .quiz-media__item {
       height: 290px;
     }
-  }
-  .quiz-media__item:last-of-type{
-    display: none;
   }
   .quiz-item:last-of-type .btn-primary{
     max-width: 100%;
