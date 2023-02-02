@@ -316,16 +316,38 @@
   }
 }
 @media screen and (max-width: 576px) {
+  .quiz-wrap {
+    .quiz-reviews{
+      padding: 0 15px;
+    }
+    .quiz-media__item {
+      height: 290px;
+    }
+  }
+  .quiz-media__item:last-of-type{
+    display: none;
+  }
+  .quiz-item:last-of-type .btn-primary{
+    max-width: 100%;
+    padding: 18px 15px;
+    width: 100%;
+  }
   .reviews-item{
     &__top{
-      height: 110px;
+      min-height: 110px;
       flex-direction: column;
       justify-content: flex-start;
-      width: calc(100% - 120px);
+      width: calc(100% - 110px);
     }
     &__media{
       height: 100px;
       max-width: 100px;
+    }
+    &__title{
+      width: 100%;
+      ul{
+        margin-bottom: 10px;
+      }
     }
     &__label{
       margin-left: 0;
