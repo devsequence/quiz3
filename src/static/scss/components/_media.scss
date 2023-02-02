@@ -281,12 +281,14 @@
     }
   }
   .btn-arrow{
-    max-width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
     font-size: 12px;
     line-height: 1;
     padding: 19px 20px;
     &:before, &:after{
       top: 5px;
+      right: 5px;
     }
   }
   .quiz-copy{
