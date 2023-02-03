@@ -329,3 +329,18 @@
     color: rgba(13, 20, 27, 0.65);
   }
 }
+.quiz-item__describe{
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px -10px 0;
+  .radio-item{
+    margin: 10px;
+    width: calc(33.333% - 20px);
+    &:last-of-type{
+      width: calc(66.666% - 20px);
+    }
+    label{
+      width: 100%;
+    }
+  }
+}
