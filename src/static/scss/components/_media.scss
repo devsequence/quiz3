@@ -283,6 +283,7 @@
       }
     }
   }
+
   .btn-arrow{
     max-width: 200px;
     border-radius: 10px;
@@ -321,6 +322,14 @@
       font-size: 14px;
       span{
         font-size: 14px;
+      }
+    }
+  }
+  .quiz-item__describe{
+    .radio-item{
+      label{
+        font-size: 12px;
+        line-height: 48px;
       }
     }
   }
@@ -364,8 +373,8 @@
       width: 100%;
     }
   }
-  .reviews-item__label{
-    border-radius: 10px;
+  .quiz-item__title span {
+    display: none;
   }
 }
 @media screen and (max-width: 480px) {
@@ -415,6 +424,8 @@
       }
       button.btn-arrow{
         margin-bottom: 0;
+        width: 100%;
+        max-width: 100%;
       }
     }
   }
@@ -430,7 +441,7 @@
         width: calc(66.666% - 10px);
       }
       label{
-        padding: 4px 5px;
+        padding: 0;
       }
     }
   }
